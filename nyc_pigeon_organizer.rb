@@ -7,7 +7,6 @@ def nyc_pigeon_organizer(data)
           # do something
         else
           new_data[name] = {attribute: trait}
-          p attribute
         end
       end
     end
