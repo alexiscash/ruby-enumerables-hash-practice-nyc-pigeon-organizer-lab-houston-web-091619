@@ -3,7 +3,11 @@ def nyc_pigeon_organizer(data)
   data.keys.each do |attribute|
     data[attribute].keys.each do |trait|
       data[attribute][trait].each do |name|
-        p name
+        if new_data.include?(name)
+          # do something
+        else
+          new_data[name] = {}
+        end
       end
     end
   end
