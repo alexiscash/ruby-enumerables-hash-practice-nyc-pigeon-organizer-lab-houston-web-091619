@@ -6,7 +6,7 @@ def nyc_pigeon_organizer(data)
         if new_data.include?(name)
           # do something
         else
-          new_data[name] = {}
+          new_data[name] = {attribute: trait}
           p attribute
         end
       end
