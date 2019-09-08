@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
       data[attribute][trait].each do |name|
         if new_data.include?(name)
           if new_data[name].include?(attribute)
-            new_data[name][attribute] << trait
+            new_data[name][attribute] << trait.to_s
           else
             new_data[name][attribute] = trait.to_s
           end
