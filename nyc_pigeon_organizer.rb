@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   new_data = {}
   data.keys.each do |elem|
     data[elem].keys.each do |nest_elem|
-      p nest_elem
+      p data[elem][nest_elem]
     end
   end
   new_data
