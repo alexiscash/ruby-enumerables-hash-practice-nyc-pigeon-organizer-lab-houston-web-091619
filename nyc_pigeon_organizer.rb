@@ -7,10 +7,10 @@ def nyc_pigeon_organizer(data)
           if new_data[name].include?(attribute)
             new_data[name][attribute] << trait.to_s
           else
-            new_data[name][attribute] = trait.to_s
+            new_data[name][attribute] = [trait.to_s]
           end
         else
-          new_data[name] = {attribute => trait.to_s}
+          new_data[name] = {attribute => [trait.to_s]}
         end
       end
     end
