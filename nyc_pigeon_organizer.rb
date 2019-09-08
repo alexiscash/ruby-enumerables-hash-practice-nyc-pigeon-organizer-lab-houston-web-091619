@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
     data[attribute].keys.each do |trait|
       data[attribute][trait].each do |name|
         if new_data.include?(name)
-          # do something
+          new_data[name][attribute] = trait
         else
           new_data[name] = {attribute => trait}
         end
