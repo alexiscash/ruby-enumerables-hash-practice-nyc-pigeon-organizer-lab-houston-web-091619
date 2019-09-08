@@ -7,6 +7,7 @@ def nyc_pigeon_organizer(data)
           # do something
         else
           new_data[name] = {}
+          p attribute
         end
       end
     end
